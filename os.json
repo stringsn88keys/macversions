@@ -1,0 +1,18 @@
+[
+    {
+        "source": "https://en.wikipedia.org/wiki/MacOS_High_Sierra",
+        "versionNumber": "10.13",
+        "lastRelease": "10.13.6",
+        "osNameA": "macOS",
+        "osNameB": "High Sierra",
+        "compatability": {
+            "iMac": ["Late", "2009"],
+            "MacBook": ["Late", "2009"],
+            "MacBook Pro": ["Mid", "2010"],
+            "MacBook Air": ["Mid", "2010"],
+            "Mac Pro": ["Mid", "2010"]
+        },
+        "minimumRAM": "2 GB",
+        "diskSpace": "14.3 GB"
+    }
+]
