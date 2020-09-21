@@ -16,11 +16,15 @@ puts nodes.xpath("//h2/span[@id='System_requirements']/../following-sibling::ul"
 # version info
 # puts nodes.xpath("//div[@class='mw-parser-output']/p")[1].to_html
 version_info = nodes
-               .xpath("//div[@class='mw-parser-output']/p")[1]
-               .text
-               .gsub(/(^.*\(version .*\)).*/, '\1')
+                   .xpath("//div[@class='mw-parser-output']/p")[1]
+                   .text
+                   .gsub(/(^.*\(version .*\)).*/, '\1')
 
 puts version_info
 
-summary = nodes
-.xpath("//table[@class='']")
+nodes.xpath("//table[@class='infobox']/tbody/tr").each do |row|
+  p row.to_html
+  if row.xpath("/tr").length > 1
+    puts row.text
+  end
+end
